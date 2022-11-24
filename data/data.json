@@ -1,0 +1,16 @@
+{
+    "testcases": [
+        {
+            "markname": "add",
+            "balance": 100,
+            "change": 50,
+            "expected": 150
+        },
+        {
+            "markname": "spend",
+            "balance": 100,
+            "change": 50,
+            "expected": 50
+        }
+    ]
+}
