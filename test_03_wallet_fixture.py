@@ -1,6 +1,6 @@
 import pytest
 
-from .wallet import Wallet, InsufficientAmount
+from wallet import Wallet, InsufficientAmount
 
 # Exercise 3: In conftest.py implement two fixtures:
 #   * empty_wallet - return Wallet with 0 balance

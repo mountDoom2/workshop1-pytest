@@ -1,6 +1,6 @@
 import pytest
 
-from .wallet import Wallet, InsufficientAmount
+from wallet import Wallet, InsufficientAmount
 
 # Exercise 4: In conftest.py, extend 'wallet' fixture, so the initial balance can be parametrized from test using @pytest.mark.parametrize
 

@@ -1,6 +1,6 @@
 import pytest
 
-from .wallet import Wallet, InsufficientAmount
+from wallet import Wallet, InsufficientAmount
 
 
 def pytest_addoption(parser):
@@ -13,6 +13,7 @@ def pytest_configure(config):
 
 
 def pytest_generate_tests(metafunc):
+    pass
     ...
 
 

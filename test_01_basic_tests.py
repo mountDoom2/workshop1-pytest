@@ -1,6 +1,6 @@
 import pytest
 
-from .wallet import Wallet, InsufficientAmount
+from wallet import Wallet, InsufficientAmount
 
 # Exercise1: Read and revise the tests.
 # you can add additional tests you see fit.

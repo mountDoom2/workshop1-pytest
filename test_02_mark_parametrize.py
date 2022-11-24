@@ -1,6 +1,6 @@
 import pytest
 
-from .wallet import Wallet, InsufficientAmount
+from wallet import Wallet, InsufficientAmount
 
 # Exercise2: Use @pytest.mark.parametrize to parametrize the tests with the same implementation.
 
