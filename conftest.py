@@ -13,7 +13,6 @@ def pytest_configure(config):
 
 
 def pytest_generate_tests(metafunc):
-    pass
     ...
 
 

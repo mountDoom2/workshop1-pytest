@@ -2,7 +2,7 @@ import pytest
 
 from wallet import Wallet, InsufficientAmount
 
-# Exercise1: Read and revise the tests.
+# Exercise 1: Read and revise the tests.
 # you can add additional tests you see fit.
 
 
@@ -16,25 +16,25 @@ def test_setting_initial_amount():
     assert wallet.balance == 100
 
 
-def test_wallet_add_cash1():
-    wallet = Wallet(10)
+def test_wallet_add_cash_190():
+    wallet = Wallet(100)
     wallet.add_cash(90)
+    assert wallet.balance == 190
+
+
+def test_wallet_add_cash_0():
+    wallet = Wallet(100)
+    wallet.add_cash(0)
     assert wallet.balance == 100
 
 
-def test_wallet_add_cash2():
-    wallet = Wallet(10)
-    wallet.add_cash(0)
-    assert wallet.balance == 10
-
-
-def test_wallet_spend_cash1():
-    wallet = Wallet(20)
+def test_wallet_spend_cash_10():
+    wallet = Wallet(100)
     wallet.spend_cash(10)
-    assert wallet.balance == 10
+    assert wallet.balance == 90
 
 
-def test_wallet_spend_cash2():
+def test_wallet_spend_cash_1():
     wallet = Wallet(100)
     wallet.spend_cash(1)
     assert wallet.balance == 99
